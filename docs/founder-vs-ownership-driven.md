@@ -14,6 +14,49 @@ The difference is not merely "top-down vs bottom-up." It is the difference betwe
 | Bottlenecks | Approval queues, meeting gravity, hidden context, founder dependency. | Alignment overhead, standards, documentation, review systems. | Bottlenecks shift from a person to a system. |
 | Culture | Heroic, access-driven, energetic, fragile. | Write-first, transparent, disagreement-tolerant, standards-heavy. | More resilient to growth and founder absence. |
 
+## Structural view
+
+```mermaid
+flowchart TB
+
+subgraph FD["Founder-Driven scale"]
+direction TB
+F["Founder"]
+Q["Decision queue"]
+W1["Product waits"]
+W2["Engineering waits"]
+W3["GTM waits"]
+W4["Ops waits"]
+F --> Q
+Q --> W1
+Q --> W2
+Q --> W3
+Q --> W4
+end
+
+subgraph OD["Ownership-Driven scale"]
+direction TB
+S["Founder / CEO<br/>Sets vision, capital, hiring bar, operating principles"]
+G["Guardrails<br/>Decision rights • KPIs • review rules"]
+D1["Team A DRI"]
+D2["Team B DRI"]
+D3["Team C DRI"]
+D4["Team D DRI"]
+P["Parallel decisions<br/>faster learning • more throughput • lower founder dependency"]
+S --> G
+G --> D1
+G --> D2
+G --> D3
+G --> D4
+D1 --> P
+D2 --> P
+D3 --> P
+D4 --> P
+end
+```
+
+*(Diagram source: [diagrams/founder-vs-ownership-portrait.mmd](../diagrams/founder-vs-ownership-portrait.mmd))*
+
 ## Core transition
 
 ```text

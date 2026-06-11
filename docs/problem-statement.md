@@ -48,3 +48,23 @@ In the AI Agent era, the target state also requires:
 - secure tool use;
 - data-class boundaries;
 - incident and audit trails.
+
+## How the transition typically unfolds
+
+```mermaid
+timeline
+    title Transition from founder scale to organization scale
+    Seed : Founder decides most things
+         : Team learns founder taste directly
+    Early growth : Repeated decisions appear
+                 : Hidden approval queues emerge
+    Scale-up : Introduce DRI / DACI / RACI-lite
+             : Move context into docs
+             : Track decision latency and founder load
+    Multi-team scale : Delegate roadmap and execution decisions
+                     : Founder focuses on strategy, capital, leaders
+    AI-augmented scale : Agents draft, route, and analyze
+                       : Policy, approvals, and evals become infrastructure
+```
+
+*(Diagram source: [diagrams/transition-timeline.mmd](../diagrams/transition-timeline.mmd). For the quarter-by-quarter mechanics, see [The First 90 Days](frameworks/first-90-days.md); for what to adopt at each company size, see [What to Adopt at Each Stage](frameworks/stage-guide.md).)*

@@ -2,7 +2,7 @@
 
 The hard limit in founder-driven scaling is usually not founder intelligence or commitment. It is serial decision-processing: too many important choices, too much context trapped at the top, and too much execution waiting behind one person's calendar.
 
-Foundational organization research argues that decision rights should sit close to decision-relevant knowledge. Empirical work also links greater decentralization to larger firm size and higher productivity, especially when local information matters more. Startup research shows that venture-backed startups tend to professionalize earlier by adding formal people systems, specialized leaders, and operating processes.
+Foundational organization research argues that decision rights should sit close to decision-relevant knowledge ([Jensen & Meckling](https://www.hbs.edu/faculty/Pages/item.aspx?num=442)). Empirical work also links greater decentralization to larger firm size and higher productivity, especially when local information matters more ([Bloom, Sadun & Van Reenen](https://worldmanagementsurvey.org/wp-content/images/2014/11/QJE-2012-Bloom-1663-705.pdf)). Startup research shows that venture-backed startups tend to professionalize earlier by adding formal people systems, specialized leaders, and operating processes ([Hellmann & Puri](https://onlinelibrary.wiley.com/doi/10.1111/1540-6261.00419)).
 
 The most credible modern startup operating models converge on one pattern:
 
@@ -20,6 +20,20 @@ The emerging winning pattern is a policy-constrained organization:
 - teams own decisions inside guardrails;
 - agents prepare, synthesize, route, and execute bounded reversible work;
 - governance, permissions, evals, and observability become operating infrastructure.
+
+## Operating flow
+
+```mermaid
+flowchart LR
+A["Founder sets doctrine"] --> B["Decision rights map"]
+B --> C["Named DRIs / Drivers"]
+C --> D["Written proposals + context"]
+D --> E["Local decisions inside guardrails"]
+E --> F["Metrics, reviews, retros"]
+F --> G["Higher org throughput"]
+```
+
+*(Diagram source: [diagrams/org-decision-flow.mmd](../diagrams/org-decision-flow.mmd))*
 
 ## Practical implication
 

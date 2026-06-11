@@ -15,6 +15,16 @@ AI-agent governance is the operating system for safe delegation to non-human wor
 | High risk | Customer-facing changes, code to production, external communications, financial actions | Human approval before execution | Human approves and remains accountable |
 | Critical risk | Hiring/firing, compensation, legal commitments, security exceptions, sensitive data transfer | No unsupervised execution | Human decides; agent only supports |
 
+```mermaid
+flowchart TB
+L["Low risk<br/>Drafts, summaries, classifications"] --> LA["Agent may act autonomously"]
+M["Moderate risk<br/>Internal reversible actions"] --> MA["Agent acts inside policy + audits"]
+H["High risk<br/>External or production impact"] --> HA["Human approval before execution"]
+C["Critical risk<br/>Legal, hiring, compensation, security exceptions"] --> CA["Human decides; agent only supports"]
+```
+
+*(Diagram source: [diagrams/ai-approval-tiers.mmd](../../diagrams/ai-approval-tiers.mmd))*
+
 ## Governance checklist
 
 - [ ] Agent owner is named.
