@@ -6,6 +6,8 @@ Early startups often win because a founder can make fast, coherent decisions acr
 
 ![From founder scale to organization scale to AI-agent scale](assets/scale-story.svg)
 
+Prefer slides? The whole manual is presented as a [public deck](https://restack-ai.github.io/founder-to-organization-scale/) for startup audiences at every stage.
+
 This repository documents a practical transition:
 
 ```text
