@@ -44,10 +44,12 @@ founder-to-organization-scale/
 │   ├── founder-vs-ownership-driven.md
 │   ├── case-studies/
 │   ├── frameworks/
-│   └── ai-agents/
+│   ├── ai-agents/
+│   └── examples/
 ├── templates/
 ├── diagrams/
 ├── assets/
+├── scripts/
 └── bibliography.md
 ```
 
@@ -55,9 +57,11 @@ founder-to-organization-scale/
 
 1. Read [Executive Summary](docs/executive-summary.md).
 2. Compare [Founder-Driven vs Ownership-Driven](docs/founder-vs-ownership-driven.md).
-3. Apply the [Decision Rights Matrix](docs/frameworks/decision-rights-matrix.md).
-4. Run the [Quarterly Decision Review](templates/quarterly-decision-review.md).
-5. For AI workflows, use the [AI Agent Risk Review](templates/ai-agent-risk-review.md).
+3. Check [What to Adopt at Each Stage](docs/frameworks/stage-guide.md) for your company size.
+4. Apply the [Decision Rights Matrix](docs/frameworks/decision-rights-matrix.md) and run [The First 90 Days](docs/frameworks/first-90-days.md).
+5. See all the templates filled in at the [Acme worked example](docs/examples/acme-series-a.md).
+6. Run the [Quarterly Decision Review](templates/quarterly-decision-review.md).
+7. For AI workflows, use the [AI Agent Risk Review](templates/ai-agent-risk-review.md).
 
 ## Main visual
 
