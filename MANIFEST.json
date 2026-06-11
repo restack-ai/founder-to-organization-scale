@@ -15,6 +15,11 @@
     "bytes": 55
   },
   {
+    "path": "CLAUDE.md",
+    "sha256_16": "d3b1719d588f494b",
+    "bytes": 2500
+  },
+  {
     "path": "CONTRIBUTING.md",
     "sha256_16": "78d89b5f4e130b76",
     "bytes": 575
@@ -26,8 +31,13 @@
   },
   {
     "path": "README.md",
-    "sha256_16": "74594eb369b63b7e",
-    "bytes": 3295
+    "sha256_16": "e75eed6694de4dcb",
+    "bytes": 3376
+  },
+  {
+    "path": "assets/title.svg",
+    "sha256_16": "e5a5728e079e4209",
+    "bytes": 13782
   },
   {
     "path": "assets/founder-vs-ownership-portrait.png",

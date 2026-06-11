@@ -4,6 +4,8 @@
 
 Early startups often win because a founder can make fast, coherent decisions across product, hiring, sales, and operations. That same strength becomes a bottleneck when the company grows: too many decisions, too much context trapped at the top, and too much work waiting behind one person's calendar.
 
+![From founder scale to organization scale to AI-agent scale](assets/title.svg)
+
 This repository documents a practical transition:
 
 ```text
