@@ -17,3 +17,11 @@ Good contributions include:
 - Cite sources when making factual claims.
 - Mark opinionated patterns as opinionated.
 - Avoid pretending that one framework works for every company.
+
+## Repo maintenance
+
+`MANIFEST.json` lists every file with its hash (`sha256_16`: first 16 hex chars of SHA-256) and size in bytes. After adding, changing, or deleting any file, regenerate it:
+
+```bash
+./scripts/update-manifest.sh
+```
