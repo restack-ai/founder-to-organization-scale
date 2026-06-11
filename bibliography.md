@@ -31,6 +31,13 @@ This repo is based on a synthesis of organization theory, startup operating lite
 - Intercom: Product Managers Should Not Build the Roadmap — https://www.intercom.com/blog/product-managers-should-not-build-the-roadmap/
 - Intercom: Keeping and Growing Great Customer Support Talent — https://www.intercom.com/blog/keeping-and-growing-great-customer-support-talent/
 
+## Counter-case: heavyweight self-management
+
+- Bernstein, Bunch, Canner & Lee, "Beyond the Holacracy Hype," Harvard Business Review (Jul–Aug 2016) — https://hbr.org/2016/07/beyond-the-holacracy-hype
+- Time: "Zappos' Weird Management Style Is Costing It More Employees" (2016) — https://time.com/4180791/zappos-holacracy-buyouts/
+- CNBC: "Zappos employees not cool with 'Holacracy'" (2015) — https://www.cnbc.com/2015/05/11/zappos-employees-not-cool-with-holacracy.html
+- Quartz: "Zappos has quietly backed away from holacracy" (2020) — https://qz.com/work/1776841/zappos-has-quietly-backed-away-from-holacracy
+
 ## AI agents, productivity, and governance
 
 - Anthropic: Building Effective Agents — https://www.anthropic.com/research/building-effective-agents
