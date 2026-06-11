@@ -1,0 +1,172 @@
+[
+  {
+    "path": ".github/ISSUE_TEMPLATE/case-study.md",
+    "sha256_16": "22c4ea00ead6778c",
+    "bytes": 272
+  },
+  {
+    "path": ".github/ISSUE_TEMPLATE/framework.md",
+    "sha256_16": "2fbb0598772183d8",
+    "bytes": 261
+  },
+  {
+    "path": ".gitignore",
+    "sha256_16": "a788c97991ac62b6",
+    "bytes": 55
+  },
+  {
+    "path": "CONTRIBUTING.md",
+    "sha256_16": "78d89b5f4e130b76",
+    "bytes": 575
+  },
+  {
+    "path": "LICENSE",
+    "sha256_16": "1126322e2cc8d165",
+    "bytes": 1056
+  },
+  {
+    "path": "README.md",
+    "sha256_16": "74594eb369b63b7e",
+    "bytes": 3295
+  },
+  {
+    "path": "assets/founder-vs-ownership-portrait.png",
+    "sha256_16": "73d7aed6f0cc5213",
+    "bytes": 1448900
+  },
+  {
+    "path": "assets/founder-vs-ownership-portrait.svg",
+    "sha256_16": "0e45137fbd1eb0ca",
+    "bytes": 6068
+  },
+  {
+    "path": "bibliography.md",
+    "sha256_16": "a0168c398c137a3e",
+    "bytes": 4670
+  },
+  {
+    "path": "diagrams/ai-approval-tiers.mmd",
+    "sha256_16": "8c28c440e1333c33",
+    "bytes": 394
+  },
+  {
+    "path": "diagrams/founder-vs-ownership-portrait.mmd",
+    "sha256_16": "d2ed157c8bba7f86",
+    "bytes": 648
+  },
+  {
+    "path": "diagrams/org-decision-flow.mmd",
+    "sha256_16": "9741707467bb2c91",
+    "bytes": 254
+  },
+  {
+    "path": "diagrams/transition-timeline.mmd",
+    "sha256_16": "153de37a7646d898",
+    "bytes": 658
+  },
+  {
+    "path": "docs/ai-agents/evals-and-observability.md",
+    "sha256_16": "0d4e7590f6c04baf",
+    "bytes": 1640
+  },
+  {
+    "path": "docs/ai-agents/failure-modes.md",
+    "sha256_16": "34efc4e60b5a8e7a",
+    "bytes": 2399
+  },
+  {
+    "path": "docs/ai-agents/governance-patterns.md",
+    "sha256_16": "de449e0ee569ce2f",
+    "bytes": 2308
+  },
+  {
+    "path": "docs/ai-agents/org-decision-drift.md",
+    "sha256_16": "ea5674601478be7f",
+    "bytes": 2486
+  },
+  {
+    "path": "docs/case-studies/atlassian.md",
+    "sha256_16": "58836c42f892573b",
+    "bytes": 1280
+  },
+  {
+    "path": "docs/case-studies/gitlab.md",
+    "sha256_16": "6848e1a76e45f9ad",
+    "bytes": 1588
+  },
+  {
+    "path": "docs/case-studies/hubspot.md",
+    "sha256_16": "8ebebaee37c05369",
+    "bytes": 1355
+  },
+  {
+    "path": "docs/case-studies/intercom.md",
+    "sha256_16": "dceaae181b72ca21",
+    "bytes": 1592
+  },
+  {
+    "path": "docs/executive-summary.md",
+    "sha256_16": "7a75b25881f2123e",
+    "bytes": 2966
+  },
+  {
+    "path": "docs/founder-vs-ownership-driven.md",
+    "sha256_16": "1767372e6676a213",
+    "bytes": 3008
+  },
+  {
+    "path": "docs/frameworks/daci-dri-raci-rapid.md",
+    "sha256_16": "82a324429b9deca4",
+    "bytes": 1854
+  },
+  {
+    "path": "docs/frameworks/decision-rights-matrix.md",
+    "sha256_16": "49c8e2afabcc008b",
+    "bytes": 2542
+  },
+  {
+    "path": "docs/frameworks/delegation-rituals.md",
+    "sha256_16": "16b4078925d0ae67",
+    "bytes": 1287
+  },
+  {
+    "path": "docs/frameworks/onboarding-playbook.md",
+    "sha256_16": "ee0d4b45fef4966b",
+    "bytes": 1738
+  },
+  {
+    "path": "docs/frameworks/scale-kpis.md",
+    "sha256_16": "7435bb68d08b81d4",
+    "bytes": 2022
+  },
+  {
+    "path": "docs/problem-statement.md",
+    "sha256_16": "dc8b2f3b573508c8",
+    "bytes": 2065
+  },
+  {
+    "path": "templates/ai-agent-risk-review.md",
+    "sha256_16": "b9b3f19e573f49a3",
+    "bytes": 1244
+  },
+  {
+    "path": "templates/decision-record.md",
+    "sha256_16": "cf7b3c3bcbbf905e",
+    "bytes": 719
+  },
+  {
+    "path": "templates/delegation-contract.md",
+    "sha256_16": "0d5047c079df98b4",
+    "bytes": 754
+  },
+  {
+    "path": "templates/quarterly-decision-review.md",
+    "sha256_16": "14e4f1b9aad1c244",
+    "bytes": 1206
+  },
+  {
+    "path": "templates/team-health-review.md",
+    "sha256_16": "e7a12f547df88648",
+    "bytes": 671
+  }
+]

@@ -1,0 +1,36 @@
+flowchart TB
+
+subgraph FD["Founder-Driven scale"]
+direction TB
+F["Founder"]
+Q["Decision queue"]
+W1["Product waits"]
+W2["Engineering waits"]
+W3["GTM waits"]
+W4["Ops waits"]
+F --> Q
+Q --> W1
+Q --> W2
+Q --> W3
+Q --> W4
+end
+
+subgraph OD["Ownership-Driven scale"]
+direction TB
+S["Founder / CEO\nSets vision, capital, hiring bar, operating principles"]
+G["Guardrails\nDecision rights • KPIs • review rules"]
+D1["Team A DRI"]
+D2["Team B DRI"]
+D3["Team C DRI"]
+D4["Team D DRI"]
+P["Parallel decisions\nfaster learning • more throughput • lower founder dependency"]
+S --> G
+G --> D1
+G --> D2
+G --> D3
+G --> D4
+D1 --> P
+D2 --> P
+D3 --> P
+D4 --> P
+end
