@@ -16,13 +16,13 @@
   },
   {
     "path": "CLAUDE.md",
-    "sha256_16": "d3b1719d588f494b",
-    "bytes": 2500
+    "sha256_16": "d7888bef88ac6faa",
+    "bytes": 2736
   },
   {
     "path": "CONTRIBUTING.md",
-    "sha256_16": "78d89b5f4e130b76",
-    "bytes": 575
+    "sha256_16": "2f6a5ef18f4d7fd7",
+    "bytes": 811
   },
   {
     "path": "LICENSE",
@@ -31,13 +31,8 @@
   },
   {
     "path": "README.md",
-    "sha256_16": "e75eed6694de4dcb",
-    "bytes": 3376
-  },
-  {
-    "path": "assets/title.svg",
-    "sha256_16": "e5a5728e079e4209",
-    "bytes": 13782
+    "sha256_16": "4a061c7c8f145c86",
+    "bytes": 3680
   },
   {
     "path": "assets/founder-vs-ownership-portrait.png",
@@ -50,9 +45,14 @@
     "bytes": 6068
   },
   {
+    "path": "assets/scale-story.svg",
+    "sha256_16": "e5a5728e079e4209",
+    "bytes": 13782
+  },
+  {
     "path": "bibliography.md",
-    "sha256_16": "a0168c398c137a3e",
-    "bytes": 4670
+    "sha256_16": "1d390a110b3e4833",
+    "bytes": 5292
   },
   {
     "path": "diagrams/ai-approval-tiers.mmd",
@@ -86,8 +86,8 @@
   },
   {
     "path": "docs/ai-agents/governance-patterns.md",
-    "sha256_16": "de449e0ee569ce2f",
-    "bytes": 2308
+    "sha256_16": "25d399c23e62916d",
+    "bytes": 2822
   },
   {
     "path": "docs/ai-agents/org-decision-drift.md",
@@ -115,14 +115,24 @@
     "bytes": 1592
   },
   {
+    "path": "docs/case-studies/zappos-holacracy.md",
+    "sha256_16": "6d8ea924cc3704de",
+    "bytes": 3459
+  },
+  {
+    "path": "docs/examples/acme-series-a.md",
+    "sha256_16": "84d15ec7f458c958",
+    "bytes": 8507
+  },
+  {
     "path": "docs/executive-summary.md",
-    "sha256_16": "7a75b25881f2123e",
-    "bytes": 2966
+    "sha256_16": "cf9f8d1e33913934",
+    "bytes": 3619
   },
   {
     "path": "docs/founder-vs-ownership-driven.md",
-    "sha256_16": "1767372e6676a213",
-    "bytes": 3008
+    "sha256_16": "750ac41332ad35e6",
+    "bytes": 3814
   },
   {
     "path": "docs/frameworks/daci-dri-raci-rapid.md",
@@ -135,9 +145,19 @@
     "bytes": 2542
   },
   {
+    "path": "docs/frameworks/delegation-failure-modes.md",
+    "sha256_16": "c5b2a89043131e13",
+    "bytes": 4026
+  },
+  {
     "path": "docs/frameworks/delegation-rituals.md",
     "sha256_16": "16b4078925d0ae67",
     "bytes": 1287
+  },
+  {
+    "path": "docs/frameworks/first-90-days.md",
+    "sha256_16": "f697b27af7b72618",
+    "bytes": 4359
   },
   {
     "path": "docs/frameworks/onboarding-playbook.md",
@@ -150,9 +170,19 @@
     "bytes": 2022
   },
   {
+    "path": "docs/frameworks/stage-guide.md",
+    "sha256_16": "33bfc49f86434246",
+    "bytes": 3531
+  },
+  {
     "path": "docs/problem-statement.md",
-    "sha256_16": "dc8b2f3b573508c8",
-    "bytes": 2065
+    "sha256_16": "601989c28b7bdae8",
+    "bytes": 3068
+  },
+  {
+    "path": "scripts/update-manifest.sh",
+    "sha256_16": "67c713eac28ef969",
+    "bytes": 803
   },
   {
     "path": "templates/ai-agent-risk-review.md",
