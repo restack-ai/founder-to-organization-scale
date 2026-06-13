@@ -27,14 +27,13 @@
   <!-- 01 · Cover -->
   <section data-label="Cover">
     <div class="slide glow cover">
-      <div>
+      <div class="cover-copy">
         <div class="eyebrow">Operating manual · open source</div>
-        <h1 style="margin-top:28px">Founder to<br>organization scale.</h1>
+        <h1 style="margin-top:28px">Founder to<br>organization scale<span class="title-dot">.</span></h1>
         <p class="lead">How a startup moves from one person's decision queue to a system that helps many people — and now agents — decide well.</p>
         <div class="meta">
           <div><b>For every stage</b>pre-seed to 100+</div>
           <div><b>Research-backed</b>sources cited</div>
-          <div><b>MIT</b>fork the templates</div>
         </div>
       </div>
       <div data-viz="cover"></div>
@@ -475,22 +474,22 @@ window.QF_DECK_DATA = {
   function iconSvg(n){return '<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">'+(ICONS[n]||'')+'</svg>';}
   document.querySelectorAll('[data-brand]').forEach(e=>e.innerHTML=MARK+'<span>founder→org scale</span>');
   document.querySelectorAll('[data-ico]').forEach(e=>e.innerHTML=iconSvg(e.getAttribute('data-ico')));
-  // cover viz — founder node fanning out to DRI nodes through a guardrail
+  // cover viz — founder queue to organizational throughput
   const cv=document.querySelector('[data-viz="cover"]');
-  if(cv){cv.innerHTML='<div style="position:relative;aspect-ratio:4/3.2;background:linear-gradient(180deg,var(--surface-1),var(--canvas-soft));border:1px solid var(--hairline);border-radius:var(--r-xl);overflow:hidden">'+
-    '<div style="position:absolute;inset:0;opacity:0.5;background-image:linear-gradient(var(--hairline) 1px,transparent 1px),linear-gradient(90deg,var(--hairline) 1px,transparent 1px);background-size:64px 64px"></div>'+
-    '<svg viewBox="0 0 640 500" style="position:absolute;inset:0;width:100%;height:100%"><defs><linearGradient id="e" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#263A8B"/><stop offset=".58" stop-color="#1C8A84"/><stop offset="1" stop-color="#C7842B"/></linearGradient></defs>'+
-    '<line x1="120" y1="120" x2="320" y2="250" stroke="url(#e)" stroke-width="2" opacity="0.55"/>'+
-    '<line x1="320" y1="250" x2="500" y2="140" stroke="url(#e)" stroke-width="2" opacity="0.55"/>'+
-    '<line x1="320" y1="250" x2="520" y2="280" stroke="url(#e)" stroke-width="2" opacity="0.55"/>'+
-    '<line x1="320" y1="250" x2="460" y2="400" stroke="url(#e)" stroke-width="2" opacity="0.55"/>'+
-    '<rect x="290" y="220" width="60" height="60" rx="2" fill="none" stroke="#1C8A84" stroke-width="1.5" opacity="0.8"/>'+
-    '<rect x="109" y="109" width="22" height="22" fill="#FBFAF6" stroke="#D64A32" stroke-width="2.5"/>'+
-    '<rect x="492" y="132" width="16" height="16" fill="#1C8A84"/><rect x="512" y="272" width="16" height="16" fill="#263A8B"/><rect x="452" y="392" width="16" height="16" fill="#C7842B"/>'+
-    '<circle r="6" fill="#1C8A84"><animateMotion dur="3.4s" repeatCount="indefinite" path="M120,120 L320,250 L520,280"/></circle>'+
-    '<circle r="5" fill="#C7842B"><animateMotion dur="4.6s" repeatCount="indefinite" path="M120,120 L320,250 L460,400"/></circle></svg>'+
-    '<div style="position:absolute;left:32px;bottom:28px;font-family:var(--font-mono);font-size:24px;color:var(--cyan-text)">decision.route <span style="color:var(--ink-faint)">/ founder → dri</span></div>'+
-    '<div style="position:absolute;right:32px;bottom:28px;font-family:var(--font-mono);font-size:24px;color:var(--ink-subtle)">load 71% → 38%</div></div>';}
+  if(cv){cv.innerHTML='<div class="cover-diagram">'+
+    '<svg viewBox="0 0 780 500" style="position:absolute;inset:0;width:100%;height:100%">'+
+    '<text x="58" y="86" class="cv-label">from founder</text><text x="58" y="112" class="cv-label">bottleneck</text><path d="M58 132h44" stroke="#111315" stroke-width="2"/>'+
+    '<text x="424" y="86" class="cv-label">to organizational</text><text x="424" y="112" class="cv-label">throughput</text><path d="M424 132h44" stroke="#111315" stroke-width="2"/>'+
+    '<circle cx="208" cy="280" r="34" fill="#FBFAF6" stroke="#111315" stroke-width="2.4"/><text x="196" y="291" class="cv-f">F</text>'+
+    '<path d="M58 220L174 272M58 250L174 276M58 280L174 280M58 310L174 284M58 340L174 288" stroke="#66717B" stroke-width="1.5" stroke-dasharray="3 5"/>'+
+    '<circle cx="58" cy="220" r="5" fill="#66717B"/><circle cx="58" cy="250" r="5" fill="#66717B"/><circle cx="58" cy="280" r="5" fill="#66717B"/><circle cx="58" cy="310" r="5" fill="#66717B"/><circle cx="58" cy="340" r="5" fill="#66717B"/>'+
+    '<path d="M268 280h84" stroke="#D64A32" stroke-width="2.5"/><path d="M340 268l14 12-14 12" fill="none" stroke="#D64A32" stroke-width="2.5"/>'+
+    '<g stroke="#111315" stroke-width="1.4" fill="#FBFAF6"><rect x="438" y="180" width="40" height="40"/><rect x="520" y="180" width="40" height="40"/><rect x="602" y="180" width="40" height="40"/><rect x="438" y="248" width="40" height="40"/><rect x="520" y="248" width="40" height="40"/><rect x="602" y="248" width="40" height="40"/><rect x="438" y="316" width="40" height="40"/><rect x="520" y="316" width="40" height="40"/><rect x="602" y="316" width="40" height="40"/></g>'+
+    '<g stroke="#D64A32" stroke-width="1.2"><path d="M458 220v28M540 220v28M622 220v28M478 268h42M560 268h42M458 288v28M540 288v28M622 288v28"/></g>'+
+    '<g stroke="#111315" stroke-width="1.6"><path d="M386 200h52M386 268h52M386 336h52M642 200h80M642 268h80M642 336h80"/><path d="M714 192l10 8-10 8M714 260l10 8-10 8M714 328l10 8-10 8"/></g>'+
+    '<path d="M678 164h18v248h-18" fill="none" stroke="#D64A32" stroke-width="2"/>'+
+    '<text x="58" y="436" class="cv-note">one person</text><text x="58" y="462" class="cv-note">decision queue</text><text x="424" y="436" class="cv-note">a system that helps</text><text x="424" y="462" class="cv-note">many people — and</text><text x="424" y="488" class="cv-note">now agents — decide well</text></svg>'+
+    '</div>';}
   function atlasSvg(inner) {
     return '<svg viewBox="0 0 1920 1080" role="img" aria-hidden="true" focusable="false">'+inner+'</svg>';
   }
@@ -501,7 +500,7 @@ window.QF_DECK_DATA = {
     return '<rect class="node '+(cls||'blue')+'" x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'"/><text x="'+(x+18)+'" y="'+(y+32)+'">'+label+'</text>';
   }
   const ARTS = [
-    () => atlasSvg('<path class="hair blue quiet" d="M128 0V1080"/><path class="hair teal quiet" d="M0 890H1920"/><circle class="hair amber mid" cx="1460" cy="470" r="250"/><circle class="hair amber quiet" cx="1460" cy="470" r="320"/><text x="1320" y="188">cover route field</text>'),
+    () => atlasSvg(''),
     () => atlasSvg('<path class="route-line blue mid" d="M720 800h880"/><path class="hair amber dash mid" d="M1600 800h190"/><circle class="fill-blue" cx="720" cy="800" r="10"/><circle class="fill-teal" cx="940" cy="800" r="10"/><circle class="fill-blue" cx="1160" cy="800" r="10"/><circle class="fill-teal" cx="1380" cy="800" r="10"/><circle class="fill-blue" cx="1600" cy="800" r="10"/><rect class="node amber" x="1745" y="768" width="64" height="64"/><text x="700" y="760">01</text><text x="920" y="760">02</text><text x="1140" y="760">03</text><text x="1360" y="760">04</text><text x="1580" y="760">05</text><text x="1692" y="872">toolkit appendix</text><text x="885" y="872">deck route: five stops then resources</text>'),
     () => atlasSvg('<circle class="hair red mid" cx="1470" cy="520" r="82"/><circle class="hair red quiet" cx="1470" cy="520" r="132"/><path class="route-line red strong" d="M1110 280L1470 520L1830 300"/><path class="route-line red mid" d="M1070 760L1470 520L1810 770"/><path class="hair amber dash mid" d="M1380 430h180v180h-180z"/><text x="1330" y="710">founder junction lock</text>'),
     () => atlasSvg('<rect class="band" x="1060" y="168" width="560" height="220"/><path class="route-line red mid" d="M1115 340C1220 250 1340 290 1442 240s156-42 255 26"/><path class="hair amber dash mid" d="M1130 232h420M1130 282h330M1130 332h390"/><circle class="hair red mid" cx="1440" cy="270" r="72"/><text x="1150" y="448">approval queue trace</text>'),
@@ -515,9 +514,9 @@ window.QF_DECK_DATA = {
     () => atlasSvg('<path class="hair blue quiet" d="M1060 720h710M1060 720v-330"/><path class="route-line amber mid" d="M1080 690C1180 668 1258 610 1320 540S1446 410 1580 378s180 10 220 56"/><path class="route-line teal quiet" d="M1080 682h190v-72h190v-92h190v-110h190"/><circle class="fill-blue" cx="1270" cy="610" r="9"/><circle class="fill-teal" cx="1460" cy="518" r="9"/><circle class="fill-amber" cx="1650" cy="408" r="9"/><text x="1080" y="760">coordination load rises with stage</text><text x="1260" y="650">10-30</text><text x="1450" y="558">30-100</text><text x="1640" y="448">100+</text>'),
     () => atlasSvg('<path class="route-line blue mid" d="M250 742h330l130-170h270l130 118h250l130-230h290"/><rect class="node amber" x="545" y="706" width="70" height="70"/><rect class="node teal" x="945" y="536" width="70" height="70"/><rect class="node blue" x="1325" y="652" width="70" height="70"/><rect class="node teal" x="1748" y="424" width="70" height="70"/><text x="1240" y="840">stage adoption route</text>'),
     () => atlasSvg('<path class="route-line red mid" d="M1110 270h300v150h-160v120h300v150h-220"/><path class="route-line amber dash mid" d="M1430 270h250v420"/><path class="hair red mid" d="M1320 220l120 120M1440 220l-120 120"/><text x="1170" y="800">delegation failure loops</text>'),
-    () => atlasSvg('<path class="route-line blue mid" d="M1080 742h700"/><path class="hair blue mid" d="M1080 682v130M1260 682v130M1440 682v130M1620 682v130M1780 682v130"/><rect class="node teal" x="1098" y="350" width="150" height="82"/><rect class="node amber" x="1292" y="350" width="150" height="82"/><rect class="node blue" x="1486" y="350" width="150" height="82"/><path class="route-line teal quiet" d="M1248 391h44M1442 391h44M1560 432v250"/><text x="1108" y="332">instrument</text><text x="1302" y="332">transfer</text><text x="1496" y="332">review</text><text x="1072" y="650">W01</text><text x="1252" y="650">W04</text><text x="1432" y="650">W08</text><text x="1612" y="650">W12</text><text x="1238" y="842">one-quarter transition spine</text>'),
+    () => atlasSvg('<path class="route-line blue mid" d="M1080 742h700"/><path class="hair blue mid" d="M1080 682v130M1260 682v130M1440 682v130M1620 682v130M1780 682v130"/><rect class="node teal" x="1098" y="350" width="150" height="82"/><rect class="node amber" x="1292" y="350" width="150" height="82"/><rect class="node blue" x="1486" y="350" width="150" height="82"/><path class="route-line teal quiet" d="M1248 391h44M1442 391h44M1560 432v250"/><text x="1108" y="332">instrument</text><text x="1302" y="332">transfer</text><text x="1496" y="332">review</text><text x="1072" y="650">W01</text><text x="1252" y="650">W04</text><text x="1432" y="650">W08</text><text x="1612" y="650">W12</text><text x="1238" y="810">one-quarter transition spine</text>'),
     () => atlasSvg('<path class="route-line teal mid" d="M220 785h360l90-100h310l90 100h310l90-100h250"/><path class="hair amber dash mid" d="M310 705v160M730 615v250M1150 705v160M1570 615v250"/><text x="1230" y="885">90 day playbook rail</text>'),
-    () => atlasSvg('<path class="route-line teal mid" d="M1130 660c150-170 270-240 440-250"/><path class="route-line blue mid" d="M1130 420c190-40 310 20 460 170"/><path class="hair amber dash mid" d="M1545 250h220v520h-220z"/><circle class="node teal" cx="1260" cy="566" r="34"/><circle class="node blue" cx="1440" cy="442" r="34"/><text x="1160" y="825">agents alter the route map</text>'),
+    () => atlasSvg('<path class="route-line teal mid" d="M1130 660c150-170 270-240 440-250"/><path class="route-line blue mid" d="M1130 420c190-40 310 20 460 170"/><path class="hair amber dash mid" d="M1545 250h220v520h-220z"/><circle class="node teal" cx="1260" cy="566" r="34"/><circle class="node blue" cx="1440" cy="442" r="34"/><text x="1160" y="810">agents alter the route map</text>'),
     () => atlasSvg('<path class="route-line teal mid" d="M1110 310h290v150h-190v130h330"/><path class="route-line amber mid" d="M1420 310h270v350"/><path class="hair amber dash mid" d="M1510 250h230v470h-230z"/><text x="1125" y="790">prep decentralizes / policy centralizes</text>'),
     () => atlasSvg('<path class="route-line blue mid" d="M1120 300h620"/><path class="route-line amber mid" d="M1430 300h310"/><path class="hair blue quiet" d="M1200 250v88M1360 250v88M1520 250v88M1680 250v88"/><circle class="fill-teal" cx="1200" cy="300" r="9"/><circle class="fill-teal" cx="1360" cy="300" r="9"/><circle class="fill-amber" cx="1520" cy="300" r="9"/><rect class="node red" x="1650" y="270" width="60" height="60"/><text x="1155" y="230">low</text><text x="1290" y="230">moderate</text><text x="1472" y="230">high</text><text x="1605" y="230">critical</text><text x="1100" y="370">risk rises</text><text x="1460" y="370">autonomy narrows</text>'),
     () => atlasSvg('<text x="1270" y="236">repo folders</text><rect class="node blue" x="1268" y="262" width="132" height="54"/><rect class="node teal" x="1428" y="262" width="124" height="54"/><rect class="node amber" x="1580" y="262" width="96" height="54"/><rect class="node teal" x="1704" y="262" width="108" height="54"/><path class="route-line blue quiet" d="M1230 290h38M1400 290h28M1552 290h28M1676 290h28"/><text x="1282" y="298">frameworks</text><text x="1442" y="298">templates</text><text x="1595" y="298">cases</text><text x="1718" y="298">example</text><text x="1268" y="346">clone once, use the folders</text>'),
