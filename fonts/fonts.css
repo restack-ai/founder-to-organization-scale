@@ -1,5 +1,5 @@
-/* QuietFabric fonts — Pretendard (self-hosted, deck weights only) + JetBrains Mono (CDN) */
-@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap");
+/* Decision Atlas fonts — IBM Plex display/mono + Inter body, per DESIGN.md */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap");
 
 @font-face { font-family: "Pretendard"; font-weight: 400; font-style: normal; font-display: swap;
   src: url("Pretendard-Regular.woff2") format("woff2"); }

@@ -12,15 +12,15 @@
 <link rel="stylesheet" href="deck.css">
 <style>
   html, body { margin: 0; background: #000; }
-  #themeToggle { position: fixed; top: 16px; right: 18px; z-index: 9999; display: inline-flex; align-items: center; gap: 8px;
-    background: rgba(13,17,26,0.82); border: 1px solid #33405A; color: #B8C2D0; border-radius: 9999px;
-    padding: 8px 14px; font: 500 13px/1 "JetBrains Mono", monospace; cursor: pointer; backdrop-filter: blur(8px); }
-  #themeToggle:hover { color: #F4F7FA; border-color: #53D0C5; }
-  #themeToggle .dot { width: 7px; height: 7px; border-radius: 50%; background: #53D0C5; box-shadow: 0 0 8px #53D0C5; }
+  #themeToggle { position: fixed; top: 16px; right: 18px; z-index: 9999; display: none; align-items: center; gap: 8px;
+    background: rgba(251,250,246,0.88); border: 1px solid #D8D1C5; color: #4E5862; border-radius: 2px;
+    padding: 8px 14px; font: 500 13px/1 "IBM Plex Mono", ui-monospace, monospace; cursor: pointer; backdrop-filter: blur(8px); }
+  #themeToggle:hover { color: #111315; border-color: #1C8A84; }
+  #themeToggle .dot { width: 7px; height: 7px; border-radius: 0; background: #1C8A84; transform: rotate(45deg); }
 </style>
 </head>
 <body>
-<button id="themeToggle"><span class="dot"></span><span id="themeLabel">dark</span></button>
+<button id="themeToggle"><span class="dot"></span><span id="themeLabel">atlas</span></button>
 
 <deck-stage width="1920" height="1080">
 
@@ -219,7 +219,7 @@
     <div class="slide">
       <div class="pad">
         <div class="s-head"><span class="eyebrow">Operating system · measurement</span>
-          <span class="legend" style="margin-left:auto"><span><i style="background:#F5B756"></i>founder decision load %</span><span><i style="background:#53D0C5"></i>DRI coverage %</span></span></div>
+          <span class="legend" style="margin-left:auto"><span><i style="background:#C7842B"></i>founder decision load %</span><span><i style="background:#1C8A84"></i>DRI coverage %</span></span></div>
         <div class="s-title">If it isn't measured, it quietly reverts</div>
         <div class="card soft" style="margin-top:40px; padding:32px 36px"><div class="chartbox" data-chart="kpis"></div></div>
         <div style="display:flex; gap:64px; margin-top:26px; font-size:25px; color:var(--ink-muted)">
@@ -246,18 +246,35 @@
     <div class="slide">
       <div class="pad">
         <div class="s-head"><span class="eyebrow">Your stage · adoption guide</span></div>
-        <div class="s-title">What to adopt — and what to skip — at each size</div>
-        <table class="qtable" style="margin-top:48px">
-          <thead><tr><th>stage</th><th>reality</th><th>adopt</th><th>skip</th></tr></thead>
-          <tbody>
-            <tr><td class="mono"><b>&lt; 10</b></td><td>Founder context genuinely is best — centralize without apology</td><td>Decision records for irreversible calls only</td><td class="mono">matrices · daci · dashboards</td></tr>
-            <tr><td class="mono"><b>10–30</b></td><td>First approval queues appear</td><td>One DRI per project · weekly founder decision review · 3 KPIs</td><td class="mono">rapid · heavy cadences</td></tr>
-            <tr><td class="mono"><b>30–100</b></td><td>Informal ownership stops working; ambiguity gets expensive</td><td>Decision-rights matrix · DACI · onboarding into ownership · quarterly reviews</td><td class="mono">framework sprawl</td></tr>
-            <tr><td class="mono"><b>100+</b></td><td>Portfolio governance</td><td>RAPID (sparingly) · full KPI dashboard · a named owner for the decision system itself</td><td class="mono">founder as default approver</td></tr>
-          </tbody>
-        </table>
-        <div class="card" style="margin-top:40px; border-color:var(--hairline-strong)">
-          <div style="font-size:28px; color:var(--ink-muted); line-height:1.5">Headcounts are markers, not thresholds. Adopt the next layer when its <b style="color:var(--ink)">absence costs more than a week of someone's time per month</b> — not before.</div>
+        <div class="s-title">Adopt structure when coordination load demands it</div>
+        <div class="stage-route" style="margin-top:52px">
+          <div class="stage-card">
+            <div class="stage-size">&lt; 10</div>
+            <div class="stage-reality">Founder context is still best.</div>
+            <div class="stage-adopt">Adopt decision records only for irreversible calls.</div>
+            <div class="stage-skip">Skip matrices and dashboards.</div>
+          </div>
+          <div class="stage-card">
+            <div class="stage-size">10-30</div>
+            <div class="stage-reality">First approval queues appear.</div>
+            <div class="stage-adopt">Name one DRI per project; review founder decisions weekly.</div>
+            <div class="stage-skip">Skip RAPID and heavy cadences.</div>
+          </div>
+          <div class="stage-card">
+            <div class="stage-size">30-100</div>
+            <div class="stage-reality">Informal ownership stops working.</div>
+            <div class="stage-adopt">Add decision-rights matrix, DACI, and quarterly reviews.</div>
+            <div class="stage-skip">Skip framework sprawl.</div>
+          </div>
+          <div class="stage-card">
+            <div class="stage-size">100+</div>
+            <div class="stage-reality">Portfolio governance arrives.</div>
+            <div class="stage-adopt">Use RAPID sparingly; assign an owner for the decision system.</div>
+            <div class="stage-skip">Skip founder as default approver.</div>
+          </div>
+        </div>
+        <div class="card stage-rule">
+          <div style="font-size:27px; color:var(--ink-muted); line-height:1.45">Headcounts are markers, not thresholds. Adopt the next layer when its <b style="color:var(--ink)">absence costs more than a week of someone's time per month</b>.</div>
         </div>
       </div>
       <div class="foot"><span class="brand" data-brand></span><span class="grow"></span><span>your stage · adoption guide</span><span class="num" data-num></span></div>
@@ -356,8 +373,8 @@
             </ul>
           </div>
         </div>
-        <div class="card" style="margin-top:40px; border-color:var(--hairline-strong)">
-          <div style="font-size:28px; color:var(--ink-muted); line-height:1.5">In poorly designed agent companies, people stop waiting for the founder and start waiting for <b style="color:var(--ink)">unclear policy</b>. The founder bottleneck becomes a policy bottleneck — govern early, lightly, in writing.</div>
+        <div class="card paradox-note">
+          <div>Without explicit agent policy, the founder bottleneck becomes a <b>policy bottleneck</b>. Govern early, lightly, in writing.</div>
         </div>
       </div>
       <div class="foot"><span class="brand" data-brand></span><span class="grow"></span><span>ai-agent era · the paradox</span><span class="num" data-num></span></div>
@@ -435,8 +452,8 @@ window.QF_DECK_DATA = {
     type: "line", area: true, unit: "%", height: 380,
     xLabels: ["wk1","","wk3","","wk5","","wk7","","wk9","","wk11",""],
     series: [
-      { name: "founder decision load", color: "#F5B756", data: [71,69,66,60,55,50,46,44,41,40,39,38] },
-      { name: "DRI coverage",          color: "#53D0C5", data: [36,36,45,55,60,64,70,75,82,86,89,91] },
+      { name: "founder decision load", color: "#C7842B", data: [71,69,66,60,55,50,46,44,41,40,39,38] },
+      { name: "DRI coverage",          color: "#1C8A84", data: [36,36,45,55,60,64,70,75,82,86,89,91] },
     ],
   },
 };
@@ -446,7 +463,7 @@ window.QF_DECK_DATA = {
 <script>
 /* inline brand mark, footer numbers, icons, cover viz, theme toggle */
 (function () {
-  const MARK = '<svg class="mark" viewBox="0 0 32 32" fill="none"><line x1="7" y1="9" x2="20" y2="9" stroke="#33405A" stroke-width="1.5"/><line x1="20" y1="9" x2="13" y2="23" stroke="#33405A" stroke-width="1.5"/><circle cx="7" cy="9" r="3" fill="#6E8BFF"/><circle cx="20" cy="9" r="3" fill="#53D0C5"/><circle cx="13" cy="23" r="3" fill="#8B6DFF"/></svg>';
+  const MARK = '<svg class="mark" viewBox="0 0 32 32" fill="none"><line x1="7" y1="9" x2="20" y2="9" stroke="#B9B09F" stroke-width="1.5"/><line x1="20" y1="9" x2="13" y2="23" stroke="#B9B09F" stroke-width="1.5"/><rect x="4" y="6" width="6" height="6" fill="#263A8B"/><rect x="17" y="6" width="6" height="6" fill="#1C8A84"/><rect x="10" y="20" width="6" height="6" fill="#C7842B"/></svg>';
   const ICONS = {
     grid:'<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/>',
     route:'<circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/>',
@@ -462,20 +479,65 @@ window.QF_DECK_DATA = {
   const cv=document.querySelector('[data-viz="cover"]');
   if(cv){cv.innerHTML='<div style="position:relative;aspect-ratio:4/3.2;background:linear-gradient(180deg,var(--surface-1),var(--canvas-soft));border:1px solid var(--hairline);border-radius:var(--r-xl);overflow:hidden">'+
     '<div style="position:absolute;inset:0;opacity:0.5;background-image:linear-gradient(var(--hairline) 1px,transparent 1px),linear-gradient(90deg,var(--hairline) 1px,transparent 1px);background-size:64px 64px"></div>'+
-    '<svg viewBox="0 0 640 500" style="position:absolute;inset:0;width:100%;height:100%"><defs><linearGradient id="e" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#53D0C5"/><stop offset=".5" stop-color="#6E8BFF"/><stop offset="1" stop-color="#8B6DFF"/></linearGradient></defs>'+
+    '<svg viewBox="0 0 640 500" style="position:absolute;inset:0;width:100%;height:100%"><defs><linearGradient id="e" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#263A8B"/><stop offset=".58" stop-color="#1C8A84"/><stop offset="1" stop-color="#C7842B"/></linearGradient></defs>'+
     '<line x1="120" y1="120" x2="320" y2="250" stroke="url(#e)" stroke-width="2" opacity="0.55"/>'+
     '<line x1="320" y1="250" x2="500" y2="140" stroke="url(#e)" stroke-width="2" opacity="0.55"/>'+
     '<line x1="320" y1="250" x2="520" y2="280" stroke="url(#e)" stroke-width="2" opacity="0.55"/>'+
     '<line x1="320" y1="250" x2="460" y2="400" stroke="url(#e)" stroke-width="2" opacity="0.55"/>'+
-    '<rect x="290" y="220" width="60" height="60" rx="14" fill="none" stroke="#53D0C5" stroke-width="1.5" opacity="0.7"/>'+
-    '<circle cx="120" cy="120" r="11" fill="#0D111A" stroke="#6E8BFF" stroke-width="2.5"/>'+
-    '<circle cx="500" cy="140" r="8" fill="#53D0C5"/><circle cx="520" cy="280" r="8" fill="#6E8BFF"/><circle cx="460" cy="400" r="8" fill="#8B6DFF"/>'+
-    '<circle r="6" fill="#53D0C5"><animateMotion dur="3.4s" repeatCount="indefinite" path="M120,120 L320,250 L520,280"/></circle>'+
-    '<circle r="5" fill="#8B6DFF"><animateMotion dur="4.6s" repeatCount="indefinite" path="M120,120 L320,250 L460,400"/></circle></svg>'+
+    '<rect x="290" y="220" width="60" height="60" rx="2" fill="none" stroke="#1C8A84" stroke-width="1.5" opacity="0.8"/>'+
+    '<rect x="109" y="109" width="22" height="22" fill="#FBFAF6" stroke="#D64A32" stroke-width="2.5"/>'+
+    '<rect x="492" y="132" width="16" height="16" fill="#1C8A84"/><rect x="512" y="272" width="16" height="16" fill="#263A8B"/><rect x="452" y="392" width="16" height="16" fill="#C7842B"/>'+
+    '<circle r="6" fill="#1C8A84"><animateMotion dur="3.4s" repeatCount="indefinite" path="M120,120 L320,250 L520,280"/></circle>'+
+    '<circle r="5" fill="#C7842B"><animateMotion dur="4.6s" repeatCount="indefinite" path="M120,120 L320,250 L460,400"/></circle></svg>'+
     '<div style="position:absolute;left:32px;bottom:28px;font-family:var(--font-mono);font-size:24px;color:var(--cyan-text)">decision.route <span style="color:var(--ink-faint)">/ founder → dri</span></div>'+
     '<div style="position:absolute;right:32px;bottom:28px;font-family:var(--font-mono);font-size:24px;color:var(--ink-subtle)">load 71% → 38%</div></div>';}
+  function atlasSvg(inner) {
+    return '<svg viewBox="0 0 1920 1080" role="img" aria-hidden="true" focusable="false">'+inner+'</svg>';
+  }
+  function path(points, cls) {
+    return '<polyline class="'+cls+'" points="'+points.map(p=>p.join(',')).join(' ')+'"/>';
+  }
+  function node(x,y,w,h,label,cls) {
+    return '<rect class="node '+(cls||'blue')+'" x="'+x+'" y="'+y+'" width="'+w+'" height="'+h+'"/><text x="'+(x+18)+'" y="'+(y+32)+'">'+label+'</text>';
+  }
+  const ARTS = [
+    () => atlasSvg('<path class="hair blue quiet" d="M128 0V1080"/><path class="hair teal quiet" d="M0 890H1920"/><circle class="hair amber mid" cx="1460" cy="470" r="250"/><circle class="hair amber quiet" cx="1460" cy="470" r="320"/><text x="1320" y="188">cover route field</text>'),
+    () => atlasSvg('<path class="route-line blue mid" d="M720 800h880"/><path class="hair amber dash mid" d="M1600 800h190"/><circle class="fill-blue" cx="720" cy="800" r="10"/><circle class="fill-teal" cx="940" cy="800" r="10"/><circle class="fill-blue" cx="1160" cy="800" r="10"/><circle class="fill-teal" cx="1380" cy="800" r="10"/><circle class="fill-blue" cx="1600" cy="800" r="10"/><rect class="node amber" x="1745" y="768" width="64" height="64"/><text x="700" y="760">01</text><text x="920" y="760">02</text><text x="1140" y="760">03</text><text x="1360" y="760">04</text><text x="1580" y="760">05</text><text x="1692" y="872">toolkit appendix</text><text x="885" y="872">deck route: five stops then resources</text>'),
+    () => atlasSvg('<circle class="hair red mid" cx="1470" cy="520" r="82"/><circle class="hair red quiet" cx="1470" cy="520" r="132"/><path class="route-line red strong" d="M1110 280L1470 520L1830 300"/><path class="route-line red mid" d="M1070 760L1470 520L1810 770"/><path class="hair amber dash mid" d="M1380 430h180v180h-180z"/><text x="1330" y="710">founder junction lock</text>'),
+    () => atlasSvg('<rect class="band" x="1060" y="168" width="560" height="220"/><path class="route-line red mid" d="M1115 340C1220 250 1340 290 1442 240s156-42 255 26"/><path class="hair amber dash mid" d="M1130 232h420M1130 282h330M1130 332h390"/><circle class="hair red mid" cx="1440" cy="270" r="72"/><text x="1150" y="448">approval queue trace</text>'),
+    () => atlasSvg(node(1210,238,188,118,'LATENCY','red')+node(1430,238,188,118,'CONTEXT','amber')+node(1650,238,188,118,'OWNERSHIP','blue')+'<path class="route-line red quiet" d="M1304 356v210M1524 356v210M1744 356v210"/><path class="route-line blue mid" d="M1180 690h690"/><text x="1224" y="418">queue cost</text><text x="1438" y="418">translation cost</text><text x="1646" y="418">agency cost</text><text x="1230" y="770">three compounding costs</text>'),
+    () => atlasSvg('<path class="route-line blue mid" d="M1110 315h470l-95 96 95 96h-470"/><path class="route-line teal mid" d="M1280 615h390"/><rect class="node teal" x="1670" y="570" width="90" height="90"/><text x="1110" y="260">move decisions closer</text>'),
+    () => atlasSvg('<path class="hair blue quiet" d="M1130 220h640v520h-640z"/><path class="route-line teal mid" d="M1220 640h460"/><path class="route-line blue mid" d="M1220 340h460"/><path class="hair amber dash mid" d="M1220 270h460M1220 450h460M1220 560h460"/><text x="1218" y="810">engineered ownership lanes</text>'),
+    () => atlasSvg('<circle class="node red" cx="1160" cy="292" r="30"/><path class="route-line red mid" d="M1160 292L1060 242M1160 292L1060 342M1160 292L1266 242M1160 292L1266 342"/><circle class="hair red quiet" cx="1160" cy="292" r="92"/><text x="1040" y="216">one approver</text><path class="route-line amber mid" d="M1310 292h110"/><path class="route-line teal mid" d="M1530 230h160l92 62-92 62h-160l-92-62z"/><rect class="node teal" x="1512" y="212" width="36" height="36"/><rect class="node teal" x="1674" y="212" width="36" height="36"/><rect class="node teal" x="1764" y="274" width="36" height="36"/><rect class="node teal" x="1674" y="336" width="36" height="36"/><rect class="node teal" x="1512" y="336" width="36" height="36"/><text x="1480" y="216">named DRIs inside guardrails</text><text x="1322" y="266">shift</text>'),
+    () => atlasSvg('<path class="route-line blue mid" d="M250 802h240v-120h260v80h240v-170h250v95h240"/><path class="hair teal dash mid" d="M420 620h900"/><text x="1140" y="875">decision route section overlay</text>'),
+    () => atlasSvg('<rect class="band" x="1260" y="180" width="500" height="650"/><path class="hair blue mid" d="M1320 270h380M1320 370h380M1320 470h380M1320 570h380M1320 670h380"/><path class="hair amber mid" d="M1450 220v520M1600 220v520"/><text x="1315" y="800">framework ledger overlay</text>'),
+    () => atlasSvg('<path class="hair blue quiet" d="M1120 710C1190 610 1270 650 1340 520s150-210 260-238"/><path class="hair teal mid" d="M1120 780C1220 735 1285 665 1352 575s145-235 305-310"/><circle class="fill-amber" cx="1220" cy="642" r="10"/><circle class="fill-teal" cx="1510" cy="408" r="10"/><text x="1200" y="860">load down / coverage up</text>'),
+    () => atlasSvg('<path class="hair blue quiet" d="M1060 720h710M1060 720v-330"/><path class="route-line amber mid" d="M1080 690C1180 668 1258 610 1320 540S1446 410 1580 378s180 10 220 56"/><path class="route-line teal quiet" d="M1080 682h190v-72h190v-92h190v-110h190"/><circle class="fill-blue" cx="1270" cy="610" r="9"/><circle class="fill-teal" cx="1460" cy="518" r="9"/><circle class="fill-amber" cx="1650" cy="408" r="9"/><text x="1080" y="760">coordination load rises with stage</text><text x="1260" y="650">10-30</text><text x="1450" y="558">30-100</text><text x="1640" y="448">100+</text>'),
+    () => atlasSvg('<path class="route-line blue mid" d="M250 742h330l130-170h270l130 118h250l130-230h290"/><rect class="node amber" x="545" y="706" width="70" height="70"/><rect class="node teal" x="945" y="536" width="70" height="70"/><rect class="node blue" x="1325" y="652" width="70" height="70"/><rect class="node teal" x="1748" y="424" width="70" height="70"/><text x="1240" y="840">stage adoption route</text>'),
+    () => atlasSvg('<path class="route-line red mid" d="M1110 270h300v150h-160v120h300v150h-220"/><path class="route-line amber dash mid" d="M1430 270h250v420"/><path class="hair red mid" d="M1320 220l120 120M1440 220l-120 120"/><text x="1170" y="800">delegation failure loops</text>'),
+    () => atlasSvg('<path class="route-line blue mid" d="M1080 742h700"/><path class="hair blue mid" d="M1080 682v130M1260 682v130M1440 682v130M1620 682v130M1780 682v130"/><rect class="node teal" x="1098" y="350" width="150" height="82"/><rect class="node amber" x="1292" y="350" width="150" height="82"/><rect class="node blue" x="1486" y="350" width="150" height="82"/><path class="route-line teal quiet" d="M1248 391h44M1442 391h44M1560 432v250"/><text x="1108" y="332">instrument</text><text x="1302" y="332">transfer</text><text x="1496" y="332">review</text><text x="1072" y="650">W01</text><text x="1252" y="650">W04</text><text x="1432" y="650">W08</text><text x="1612" y="650">W12</text><text x="1238" y="842">one-quarter transition spine</text>'),
+    () => atlasSvg('<path class="route-line teal mid" d="M220 785h360l90-100h310l90 100h310l90-100h250"/><path class="hair amber dash mid" d="M310 705v160M730 615v250M1150 705v160M1570 615v250"/><text x="1230" y="885">90 day playbook rail</text>'),
+    () => atlasSvg('<path class="route-line teal mid" d="M1130 660c150-170 270-240 440-250"/><path class="route-line blue mid" d="M1130 420c190-40 310 20 460 170"/><path class="hair amber dash mid" d="M1545 250h220v520h-220z"/><circle class="node teal" cx="1260" cy="566" r="34"/><circle class="node blue" cx="1440" cy="442" r="34"/><text x="1160" y="825">agents alter the route map</text>'),
+    () => atlasSvg('<path class="route-line teal mid" d="M1110 310h290v150h-190v130h330"/><path class="route-line amber mid" d="M1420 310h270v350"/><path class="hair amber dash mid" d="M1510 250h230v470h-230z"/><text x="1125" y="790">prep decentralizes / policy centralizes</text>'),
+    () => atlasSvg('<path class="route-line blue mid" d="M1120 300h620"/><path class="route-line amber mid" d="M1430 300h310"/><path class="hair blue quiet" d="M1200 250v88M1360 250v88M1520 250v88M1680 250v88"/><circle class="fill-teal" cx="1200" cy="300" r="9"/><circle class="fill-teal" cx="1360" cy="300" r="9"/><circle class="fill-amber" cx="1520" cy="300" r="9"/><rect class="node red" x="1650" y="270" width="60" height="60"/><text x="1155" y="230">low</text><text x="1290" y="230">moderate</text><text x="1472" y="230">high</text><text x="1605" y="230">critical</text><text x="1100" y="370">risk rises</text><text x="1460" y="370">autonomy narrows</text>'),
+    () => atlasSvg('<text x="1270" y="236">repo folders</text><rect class="node blue" x="1268" y="262" width="132" height="54"/><rect class="node teal" x="1428" y="262" width="124" height="54"/><rect class="node amber" x="1580" y="262" width="96" height="54"/><rect class="node teal" x="1704" y="262" width="108" height="54"/><path class="route-line blue quiet" d="M1230 290h38M1400 290h28M1552 290h28M1676 290h28"/><text x="1282" y="298">frameworks</text><text x="1442" y="298">templates</text><text x="1595" y="298">cases</text><text x="1718" y="298">example</text><text x="1268" y="346">clone once, use the folders</text>'),
+    () => atlasSvg('<path class="route-line blue mid" d="M1120 600h520"/><path class="route-line teal mid" d="M1380 340v520"/><circle class="hair teal quiet" cx="1380" cy="600" r="240"/><circle class="hair teal mid" cx="1380" cy="600" r="150"/><rect class="node teal" x="1344" y="564" width="72" height="72"/><text x="1190" y="860">system throughput mark</text>')
+  ];
+  function renderAtlasArt(sections) {
+    sections.forEach((section, i) => {
+      const slide = section.querySelector('.slide');
+      const label = section.getAttribute('data-label') || '';
+      const isChapterCover = label === 'Cover' || /^\d{2}\s/.test(label);
+      if (!slide || !isChapterCover || slide.querySelector('.atlas-art')) return;
+      const art = document.createElement('div');
+      art.className = 'atlas-art';
+      art.innerHTML = (ARTS[i] || ARTS[ARTS.length - 1])();
+      slide.insertBefore(art, slide.firstChild);
+    });
+  }
   // footer slide numbers
   const secs=[...document.querySelectorAll('deck-stage > section')];
+  renderAtlasArt(secs);
   const tot=secs.length;
   secs.forEach((s,i)=>{const n=s.querySelector('[data-num]'); if(n) n.textContent=String(i+1).padStart(2,'0')+' / '+String(tot).padStart(2,'0');});
   // theme toggle

@@ -50,13 +50,15 @@
     linear-gradient(90deg, var(--quiet-cyan), var(--fabric-blue), var(--deep-violet));
 
   /* ── Type families ─────────────────────────────────────── */
-  --font-sans: "Pretendard","Pretendard Variable",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --font-mono: "JetBrains Mono","SF Mono",ui-monospace,"Geist Mono",monospace;
+  --font-display: "IBM Plex Sans Condensed", "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Inter", "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-body);
+  --font-mono: "IBM Plex Mono", "JetBrains Mono", ui-monospace, monospace;
 
   /* ── Type scale (size / weight / line-height / tracking) ── */
-  --t-display-xl: 600 72px/1.05 var(--font-sans);
-  --t-display-lg: 600 56px/1.08 var(--font-sans);
-  --t-display-md: 600 40px/1.15 var(--font-sans);
+  --t-display-xl: 700 72px/1.05 var(--font-display);
+  --t-display-lg: 700 56px/1.08 var(--font-display);
+  --t-display-md: 700 40px/1.15 var(--font-display);
   --t-headline:   600 28px/1.25 var(--font-sans);
   --t-title:      500 20px/1.35 var(--font-sans);
   --t-body-lg:    400 18px/1.65 var(--font-sans);
